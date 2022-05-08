@@ -1,0 +1,505 @@
+html {
+    scroll-behavior: smooth;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body,
+ul,
+li,
+p {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Alegreya Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    height: 100px;
+    background: #000a10;
+}
+
+ul {
+    display: flex;
+    gap: 51px;
+    font-weight: bold;
+    margin-bottom: 7px;
+    margin-right: 115px;
+    align-items: center;
+    padding: 20px;
+}
+
+nav ul li a {
+    color: #f2cf37;
+}
+
+header a:hover {
+    text-shadow: 0px 1px 16px rgba(242, 207, 55, 0.70);
+}
+
+header img {
+    margin-left: 120px;
+    padding-top: 15px;
+}
+
+.headline {
+    display: flex;
+    justify-content: center;
+    background: #000a10;
+}
+
+section .headline {
+    position: relative;
+}
+
+.img-principal {
+    position: relative;
+    opacity: 60%;
+    width: 1161px;
+    height: 850px;
+    margin-top: 5px;
+    margin-right: 40px;
+}
+
+.img-secundaria {
+    position: absolute;
+    padding-right: 15px;
+    margin-top: 200px;
+    filter: drop-shadow(0px 0px 20px black);
+}
+
+.headline p {
+    position: absolute;
+    color: #f2cf37;
+    font-weight: 400;
+    margin-top: 290px;
+    width: 690px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.scroll-button {
+    display: flex;
+    margin-top: 600px;
+    position: absolute;
+    background: #000a10;
+    box-shadow: 0px 0px 35px 0px rgba(255, 255, 255, 0.1);
+    padding: 6px 8px;
+    border-radius: 15px;
+}
+
+.hover-arrow {
+    position: absolute;
+    visibility: hidden;
+
+}
+
+.scroll-button:hover .hover-arrow {
+    position: absolute;
+    visibility: visible;
+}
+
+.scroll-button:hover {
+    box-shadow: 0px 0px 35px 0px rgba(255, 255, 255, 0.2);
+}
+
+.game-dev {
+    position: relative;
+    display: flex;
+    padding-top: 125px;
+    padding-bottom: 250px;
+    background: #000a10;
+}
+
+.game-dev img {
+    padding-left: 35px;
+}
+
+.text-dev {
+    position: absolute;
+    right: 140px;
+}
+
+.h2-dev {
+    position: relative;
+    color: #f2cf37;
+    font-weight: bold;
+    font-size: 29px;
+    text-align: right;
+
+}
+
+.info-dev {
+
+    position: relative;
+    width: 670px;
+    font-size: 17px;
+    color: white;
+    margin: 0;
+    text-align: right;
+}
+
+.gamebutton {
+    display: flex;
+    justify-content: center;
+    background: #000a10;
+    padding-bottom: 150px;
+
+}
+
+#playing-button {
+
+    color: white;
+    font-weight: 800;
+    background: #000a10;
+    padding: 20px 50px;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 26px 0px rgba(13, 26, 35, 1);
+}
+
+.gm-1 {
+    background: #000a10;
+    padding-left: 150px;
+    padding-bottom: 200px;
+}
+
+.gm-1 h2 {
+    margin-top: 0;
+    color: #f2cf37;
+    font-weight: bold;
+    font-size: 29px;
+}
+
+.gm-1 p {
+    color: white;
+    font-size: 17px;
+    color: white;
+    padding-bottom: 150px;
+}
+
+.boxes {
+    padding-right: 100px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.rec-1 img {
+    position: absolute;
+    height: 140%;
+    width: 145%;
+    padding-left: 0px;
+    right: 7px;
+    bottom: 0;
+}
+
+.rec-1 {
+    margin-right: 50px;
+    width: 160px;
+    height: 160px;
+    transform: skew(-12deg);
+    background: radial-gradient(ellipse at center, #16292A 0%, #000A10 100%, #000A10 100%);
+    border: 9px solid #f2cf37;
+    box-shadow: -10px -10px 50px 0px rgb(255, 255, 255, 0.1);
+}
+
+.hover-info-blue {
+    display: none;
+    margin: 0;
+    padding: 0;
+}
+
+.rec-1:hover {
+    width: 420px;
+    cursor: pointer;
+    background: radial-gradient(ellipse at center, #541F5D 0%, #000A10 100%, #000A10 100%);
+    border: 9px solid #a53db7;
+    box-shadow: -10px -10px 50px 0px rgba(147, 54, 163, 0.2);
+}
+
+.rec-1:hover .hover-info-blue {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px 30px;
+}
+
+.rec-1:hover .hover-info-blue p {
+    position: absolute;
+    width: 200px;
+    font-weight: 500;
+    text-align: right;
+}
+
+.rec-1:hover .hover-info-blue h3 {
+    color: #4d88b6;
+    padding-top: 30px;
+    position: relative;
+    text-align: right;
+}
+
+.rec-1:hover .hover-info-blue img {
+    position: absolute;
+    display: block;
+    width: 85%;
+    height: 210px;
+    margin-top: 100px;
+    right: 186px;
+    padding: 0;
+
+}
+
+
+.rec-1:hover img {
+    display: none;
+}
+
+.rec-2 img {
+    position: absolute;
+    height: 140%;
+    width: 115%;
+    padding-left: 5px;
+    margin-right: -5px;
+    right: 0;
+    bottom: 0;
+}
+
+.rec-2 {
+    width: 160px;
+    height: 160px;
+    transform: skew(-12deg);
+    background: radial-gradient(ellipse at center, #16292A 0%, #000A10 100%, #000A10 100%);
+    border: 9px solid #f2cf37;
+    box-shadow: -10px -10px 50px 0px rgba(255, 255, 255, 0.1);
+}
+
+.hover-info-red {
+    display: none;
+}
+
+.rec-2:hover {
+    width: 420px;
+    cursor: pointer;
+    background: radial-gradient(ellipse at center, #541F5D 0%, #000A10 100%, #000A10 100%);
+    border: 9px solid #a53db7;
+    box-shadow: -10px -10px 50px 0px rgba(147, 54, 163, 0.2);
+}
+
+.rec-2:hover img {
+    display: none;
+}
+
+.rec-2:hover .hover-info-red {
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px 30px;
+}
+
+.rec-2:hover .hover-info-red p {
+    position: absolute;
+    width: 200px;
+    font-weight: 500;
+    text-align: left;
+}
+
+.rec-2:hover .hover-info-red h3 {
+    color: #9a353a;
+    padding-top: 30px;
+    position: relative;
+    text-align: left;
+}
+
+.rec-2:hover .hover-info-red img {
+    position: absolute;
+    display: block;
+    width: 75%;
+    height: 220px;
+    left: 212px;
+}
+
+.gm-2 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background: #000a10;
+    text-align: right;
+    height: 900px;
+}
+
+.gm-2 h2 {
+    position: relative;
+    padding-right: 140px;
+    margin-top: 0;
+    color: #f2cf37;
+    font-weight: bold;
+    font-size: 29px;
+}
+
+.gm-2 p {
+    position: relative;
+    padding-right: 140px;
+    color: white;
+    width: 870px;
+    font-size: 17px;
+    color: white;
+    padding-bottom: 150px;
+}
+
+.gm-2 img {
+    top: 80px;
+    position: absolute;
+}
+
+.gm-3 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: #000a10;
+    text-align: right;
+    height: 900px;
+}
+
+.gm-3 h2 {
+    position: relative;
+    padding-left: 150px;
+    margin-top: 0;
+    color: #f2cf37;
+    font-weight: bold;
+    font-size: 29px;
+    text-align: left;
+}
+
+.gm-3 p {
+    position: relative;
+    padding-left: 150px;
+    color: white;
+    width: 830px;
+    font-size: 17px;
+    color: white;
+    padding-bottom: 150px;
+    text-align: left;
+}
+
+.gm-3 img {
+    bottom: 140px;
+    right: 0;
+    position: absolute;
+}
+
+.gm-4 {
+    position: relative;
+    display: flex;
+    background: #000a10;
+}
+
+.gm-4 img {
+    position: relative;
+    bottom: 180px;
+}
+
+.text-gm-4 {
+    position: absolute;
+    right: 140px;
+}
+
+.h2-gm-4 {
+    position: relative;
+    color: #f2cf37;
+    font-weight: bold;
+    font-size: 29px;
+    text-align: right;
+
+}
+
+.info-gm-4 {
+
+    position: relative;
+    width: 500px;
+    font-size: 17px;
+    color: white;
+    margin: 0;
+    text-align: right;
+}
+
+.powers {
+    position: relative;
+    top: 200px;
+    display: flex;
+    gap: 5px;
+    justify-content: flex-end;
+}
+
+.download-button {
+    position: absolute;
+    top: 385px;
+    background: #f2cf37;
+    width: 100%;
+    font-size: 20px;
+    padding: 40px;
+    text-align: center;
+}
+
+.download-button h2 {
+    position: relative;
+    bottom: 5px;
+}
+
+.download-button:hover {
+    cursor: pointer;
+    color: #f2cf37;
+    background: #000000;
+    text-shadow: 0px 0px 20px rgba(242, 207, 55, 0.4);
+    box-shadow: 0px 5px 50px 6px rgba(242, 207, 55, 0.01);
+
+}
+
+footer {
+    display: flex;
+    padding-top: 200px;
+    padding-bottom: 100px;
+    justify-content: space-around;
+    background: linear-gradient(to bottom, #000A10 0%, #000A10 0%, #000000 100%);
+}
+
+footer a {
+    color: white;
+    font-weight: 400;
+}
+
+footer a:hover {
+    text-shadow: 0px 1px 16px #f2cf37b3;
+
+}
+
+.redes img {
+    padding-right: 25px;
+}
+
+.back {
+    position: absolute;
+}
+
+#back-a {
+    display: flex;
+    justify-content: center;
+}
+
+.back-arrow {
+    cursor: auto;
+    bottom: 30px;
+    position: absolute;
+
+}
