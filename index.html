@@ -7,12 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cuphead Website</title>
     <link rel="stylesheet" type="text/css" href="estilo.css">
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="mobile.css">
 </head>
 
 <body>
     <header id="menu">
         <img class="logo" src="img/cup-logo.png">
-        <nav>
+        <nav id="navbar">
             <ul>
                 <li><a href="#home-section">HOME</a></li>
                 <li><a href="#team-section">TEAM</a></li>
@@ -105,7 +106,7 @@
     <footer>
         <img class="logo" src="img/cup-logo.png">
         <div class="back">
-            <a id="back-a" href="#menu"><img class="back-arrow" src="img/back-arrow.png">Back to top</a>
+            <a id="back-a"><img class="back-arrow" src="img/back-arrow.png"><a href="#menu" class="back-text">Back to top</a></a>
         </div>
         <div class="redes">
             <a target="_blank" class="youtube" href="https://youtube.com"><img src="img/youtube.png"></a>
@@ -113,6 +114,8 @@
             <a target="_blank" class="instagram" href="https://instagram.com/vvpedroo"><img src="img/instagram.png"></a>
         </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="javascript.js"></script>
 </body>
 
 </html>
