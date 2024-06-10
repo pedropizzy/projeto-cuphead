@@ -155,14 +155,14 @@ section .headline {
     display: flex;
     justify-content: center;
     background: #000a10;
-    padding-bottom: 150px;
+    padding-bottom: 90px;
 
 }
 
 #playing-button {
 
     color: white;
-    font-weight: 800;
+    font-weight: 600;
     background: #000a10;
     padding: 20px 50px;
     border-radius: 10px;
@@ -474,9 +474,9 @@ footer a {
     font-weight: 400;
 }
 
-footer a:hover {
+.back-text:hover {
+    cursor: pointer;
     text-shadow: 0px 1px 16px #f2cf37b3;
-
 }
 
 .redes img {
@@ -493,7 +493,6 @@ footer a:hover {
 }
 
 .back-arrow {
-    cursor: auto;
     bottom: 30px;
     position: absolute;
 
